@@ -9,7 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	apt-get -y dist-upgrade && \
 	locale-gen en_US.UTF-8 && \
 	export LANG=en_US.UTF-8 && \
-	apt-get -y install gcc make automake perl libgdk-pixbuf2.0-dev libaio1 libaio-dev
+	apt-get -y install gcc make automake perl libgdk-pixbuf2.0-dev libaio1 libaio-dev wget
 
 EXPOSE 80
 WORKDIR /script
